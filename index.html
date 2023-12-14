@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Encryption App </h1>
+    <div id="myApp">
+        <input type="text" v-model="message" >
+        <br>
+        <button v-on:click="encrypt">Encriptar</button>
+
+        <ul>
+            <li v-for="({message}, index) in messages"> 
+                <span>
+                   {{index+1}} : {{message}}
+                </span>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <p> Developed By LordMathi2741</p>
+    </footer>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</body>
+</html>
